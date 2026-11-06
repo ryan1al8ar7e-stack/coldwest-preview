@@ -12,7 +12,7 @@
 .hero h1 { max-width: none; font-weight: 700; color: var(--navy); }
 .h1-big {
   display: block;
-  font: 700 clamp(56px, 9.2vw, 132px)/1.25 var(--display);
+  font: 700 clamp(56px, 9.2vw, 132px)/1.02 var(--display);
   letter-spacing: -.01em;
 }
 .h1-rest {

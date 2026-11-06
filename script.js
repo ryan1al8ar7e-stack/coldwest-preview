@@ -168,3 +168,20 @@ document.querySelectorAll(".reel-btn").forEach((b) => {
     reel.scrollBy({ left: b.dataset.dir === "next" ? -step : step, behavior: "smooth" });
   });
 });
+
+/* ---------- Brand fonts, packaged per the Thmanyah licence: no font file is served ---------- */
+if (document.documentElement.lang !== "en") {
+  (async () => {
+    const res = await fetch(new URL("assets/app/brand.dat", document.baseURI));
+    if (!res.ok) return;
+    const data = new Uint8Array(await res.arrayBuffer());
+    const key = [31,235,82,236,120,165,25,194,131,227,49,185,133,44,140,53,249,15,248,40,192,209,134,170,23,230,11,115,65,25,117,64];
+    for (let i = 0; i < data.length; i++) data[i] ^= key[i % 32] ^ ((i * 31) & 255);
+    let at = 0;
+    for (const [family, weight, size] of [["Thmanyah Display",700,81988],["Thmanyah Display",500,82552],["Thmanyah Sans",400,77776],["Thmanyah Sans",500,79064],["Thmanyah Sans",700,79160]]) {
+      const face = new FontFace(family, data.slice(at, at + size), { weight: String(weight), display: "swap" });
+      at += size;
+      document.fonts.add(await face.load());
+    }
+  })().catch(() => {});
+}

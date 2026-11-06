@@ -19,9 +19,9 @@
   --amber-deep: #A8640E;
   --amber-light: #FBE3BF;
 
-  --display: "Noto Naskh Arabic", "IBM Plex Sans Arabic", serif;
-  --sans: "IBM Plex Sans Arabic", system-ui, sans-serif;
-  --num: "Montserrat", "IBM Plex Sans Arabic", sans-serif;
+  --display: "Thmanyah Display", "Thmanyah Sans", system-ui, serif;
+  --sans: "Thmanyah Sans", system-ui, sans-serif;
+  --num: "Montserrat", "Thmanyah Sans", system-ui, sans-serif;
 
   --r-field: 12px;
   --r-card: 20px;
@@ -120,7 +120,7 @@ section { padding-block: var(--section); }
   color: var(--navy);
 }
 .h1-main { display: block; font: 700 clamp(52px, 6vw, 84px)/1.14 var(--display); text-wrap: balance; }
-.h1-cool { background: linear-gradient(transparent 60%, var(--ice) 60%, var(--ice) 74%, transparent 74%); padding-inline: .06em; }
+.h1-cool { background: linear-gradient(transparent 64%, var(--ice) 64%, var(--ice) 92%, transparent 92%); padding-inline: .06em; }
 .h1-sub { display: block; margin-block-start: 14px; font: 500 clamp(26px, 2.7vw, 36px)/1.4 var(--display); text-wrap: balance; }
 .lead { margin-block-start: 24px; font-size: 20px; line-height: 1.85; max-width: 52ch; }
 .cta-row { display: flex; flex-wrap: wrap; gap: 12px; margin-block-start: 36px; }

@@ -19,9 +19,9 @@
   --amber-deep: #A8640E;
   --amber-light: #FBE3BF;
 
-  --display: "Noto Naskh Arabic", "IBM Plex Sans Arabic", serif;
-  --sans: "IBM Plex Sans Arabic", system-ui, sans-serif;
-  --num: "Montserrat", "IBM Plex Sans Arabic", sans-serif;
+  --display: "Thmanyah Display", "Thmanyah Sans", system-ui, serif;
+  --sans: "Thmanyah Sans", system-ui, sans-serif;
+  --num: "Montserrat", "Thmanyah Sans", system-ui, sans-serif;
 
   --r-field: 12px;
   --r-card: 20px;
